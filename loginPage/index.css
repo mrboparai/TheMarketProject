@@ -1,0 +1,69 @@
+/*applied to all selectors*/
+
+body{
+    background-color: whitesmoke;
+}
+
+/*These are all the classes*/
+/*these are all the ids*/
+ 
+/*this is for the header of the login page*/
+#title{
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin-top: auto;
+    font-size: 5em;
+}
+
+/*this is for the border of the login */
+#the-form{
+    margin: 15em auto;
+    padding: 2em 2em;
+    border-style: solid;
+    border-width: 1px;
+    width: 20%;
+    height: 20%;
+    font-size: 1em;
+    position: relative;
+    background-color: #444444;
+    color: white;
+}
+
+/*this is the username textbox*/
+#username {
+    margin-bottom: 2em;
+}
+
+/*Password textbox*/
+#password{
+    margin-bottom: 3em;
+    margin-left: .4em;
+    position: relative;
+}
+
+#login-Button{
+    width: 5em;
+    background-color: rgb(97, 97, 255);
+    border: none;
+}
+
+#signup-Button{
+    background-color: rgb(97, 97, 255);
+    border: none;
+}
+
+p#error-pass{
+    position: absolute;
+    top:80%;
+}
+
+.error{
+    display:none;
+    color: rgb(245, 57, 57);
+}
+
+form#myForm{
+    position: relative;
+}
+

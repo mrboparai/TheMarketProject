@@ -1,0 +1,68 @@
+
+{ 
+"sizes":
+    [ 
+        {
+            "size": "XXS",
+            "colors": ["Green", "Red", "Pink"]
+        },
+        {
+            "size": "XS",
+            "colors": ["Green", "Red", "Pink", "Black"]
+        },
+        {
+            "size": "S",
+            "colors" : ["Red", "Pink", "Yellow", "Purple"]
+        },
+        {
+            "size": "L",
+            "colors": ["Black", "Red", "Orange", "Purple"]
+        },
+        {
+            "size": "XL",
+            "colors": ["Orange", "Red", "Black"]
+        },
+        {
+            "size": "XXL",
+            "colors": ["Green", "Black", "Red", "Pink", "Yellow", "Orange", "Purple"]
+        }
+    ],
+
+"colors":
+    [
+        {
+            "color": "Green",
+            "sizes": ["XXS", "XS", "XXL"]   
+        },
+
+        {
+            "color": "Black",
+            "sizes": ["XS", "L", "XL", "XXL"]   
+        },
+
+        {
+            "color": "Red",
+            "sizes": ["XXS", "XS", "S", "L", "XL", "XXL"]   
+        },
+
+        {
+            "color": "Pink",
+            "sizes": ["XXS", "XS", "S", "XXL"]   
+        },
+
+        {
+            "color": "Yellow",
+            "sizes": ["S", "XXL"]   
+        },
+
+        {
+            "color": "Orange",
+            "sizes": ["L", "XXL", "XL"]   
+        },
+
+        {
+            "color": "Purple",
+            "sizes": ["L", "S", "XXL"]   
+        }
+    ]
+}

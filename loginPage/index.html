@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Karanvir Boparai 216343998" />
+        <meta name="description" content="Login page" />
+        <meta name="kaywords" content="login, page, shop" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="login.js">
+        </script>
+         <script type="text/javascript" src="animations.js">
+         </script>
+        <title>Login</title>
+    </head>
+    <body >
+        <header>
+            <h1 id="title">TheMarket</h1>
+        </header>
+
+        <section>
+            <div id="the-form" name="login-information">
+                <form id="myForm">
+                    <label>
+                        Username:
+                        <input id="username" type="text" name="username" >
+                    </label>
+                    <br/>
+                    <label id="passwordlabel">
+                        Password:
+                        <input id="password" type="password" name="password" >   
+                    </label>
+                   
+                    <br/>
+                    <input id="login-Button" type="button" value="Login" />
+                    <input id="signup-Button" type="button" value="Signup" /> 
+                </form>
+                <p class="error" id="error-user">Username is invalid</p>
+                <p class="error" id="error-pass">Password is invalid</p>
+            </div>
+        </section>
+    </body>
+</html>

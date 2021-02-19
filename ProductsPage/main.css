@@ -1,0 +1,417 @@
+/*This is for universal stuff*/
+
+section{
+    margin-top: 5em;
+    min-height: 100%;
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+footer{
+    position: absolute;
+    background-color: #121212;
+    top: auto;
+    bottom: auto;
+    width: 100%;
+    display: inline-block;
+    color: white;
+}
+
+/*this is for class stuff*/
+
+/*to fix up all the icons*/
+.icon{
+    width: 2%;
+    display:inline-block;
+
+}
+
+.header-color{
+    background-color: #121212;
+    color: white;
+}
+
+/*This is for the nav bars*/
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li.nav-item { 
+    display: inline;
+    float: left;
+ 
+}
+
+li a.nav-button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.nav-button:hover {
+    background-color: #82b1fe;
+    color: black;
+}
+
+/*this is for the main images of the product*/
+img.main-product{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+   
+}
+
+/*creates equal width columns*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+/*creates a row that clears both sides*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: auto;
+  }
+/*changes the price colorr*/
+.price{
+    color: #b1341b;
+    font-size: 1.1em;
+}
+/* changes the in stock to green */
+.inStock{
+    color:green;
+}
+
+/*for the search menu*/
+.search-menu {
+    background-color: white;
+    color: black;
+}
+
+ul.search-menu{
+    position: absolute;
+    z-index: 99;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li.search-menu-item{
+    display: block;
+    margin-left: -10;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+    border-bottom: #121212 solid 1px;
+}
+
+li.search-menu-item:hover{
+    background-color: #82b1fe;
+}
+
+/*this is to make the stars*/
+.star-sizes{
+    font-size: 1.2em;
+}
+
+.filled-star{
+    color: orange;
+}
+
+/*This is for the cart*/
+
+.theCart{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.cart-item{
+    padding-left: 5%;
+    padding-right: 5%;
+    border-bottom: #121212 solid 1px;
+
+}
+
+.cart-div-info{
+    padding-left: 10%;
+}
+
+li.cart-item:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.cart-item-image{
+    width: 15%;
+    float:left;
+}
+
+.cart-item-name{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.delete-item:hover{
+    color: blue;
+}
+
+.cart-item-price{
+   position: absolute; 
+   top: 15%; 
+   right:3%;
+}
+
+.cart-checkout{
+    position: absolute; 
+    top: 73%; 
+    right:0.1%;
+    background-color: rgb(253, 198, 94);
+    color:black;
+}
+.proceed-cart{
+    position: absolute; 
+    top: 45%; 
+    right:0.1%;
+    background-color: #9ddbc2;
+    color:black;
+}
+
+.suggested-images{
+    display:block;
+    width: 10%;
+    margin: auto;
+    height: 100%;
+    min-width: 50%;    
+    position: relative;
+
+}
+/*This is for the footer text*/
+.hover-color{
+    padding-left: 4%;
+}
+.hover-color:hover{
+    color: #82b1fe;;
+}
+
+/*this is for the suggested products*/
+.suggested-products-div{
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+} 
+
+.card-hover:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+/*this is for id stuff*/
+
+#theHeader{
+    position: relative;
+}
+/* this is the icon at the top */
+#hamburger-menu{
+    padding-left: 1%;
+    width: 4%;
+}
+
+#theForm{
+    position: absolute;
+    display:inline-block;
+    margin: auto;
+    top: 50%;
+    left: 40%;
+}
+/* this is the icon at the top */
+#logo{
+
+    display: inline-block;
+    width: 10%;
+    min-width: 10%;
+    margin-left: 5%;
+    
+}
+/* this is the icon at the top */
+#search-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+   
+}
+/* this is the icon at the top */
+#shopping-icon{
+    position: absolute;
+    right:  5%;
+    top: 50%;
+}
+/* this is the icon at the top */
+#account-icon{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+  
+}
+/* this is the search bar at the top */
+#search-box{
+    width: 100%;
+    min-width: 0%;
+}
+/* this is the products div allowing the items within it to be positioned relatively */
+#the-products{
+    position: relative;
+}
+/*These are the 3 images of the product*/
+img#trex-black{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    width: 70%;
+    background-color: #edf2f8;
+    z-index: 0;
+}
+
+img#trex-red{
+    position: absolute;
+    top:20%;
+    left: 10%;
+    width: 70%;
+    background-color: #f1eee4;
+    z-index: 0;
+}
+
+img#trex-green{
+    position: absolute;
+    top:17%;
+    left: 8%;
+    width: 70%;
+    background-color: #eeeeff;
+    z-index: 0;
+}
+/* this is the products names */
+#main-product-name{
+    font-size: 2em;
+}
+
+/*this is all the items in hte purchase div*/
+#purchase-section{
+    border: 1px solid grey;
+}
+
+#add-to-cart-button{
+    background-color: #78c2a4;
+    color: black;
+    width: 30%;
+    height: 3em;
+}
+
+#add-to-cart-button:hover{
+    background-color: #82b1fe;
+}
+
+#purchase-buttons{
+    background-color: #498fff;
+    color: white;
+    width: 30%;
+    height: 3em;
+}
+
+#purchase-buttons:hover{
+    background-color: #82b1fe;
+}
+
+#search-field{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10%;
+    left: 0%;
+}
+
+/*this is for the cart item*/
+div#hidden-cart{
+    position: relative;
+    border: #121212 solid 1px;
+    margin: 3em 5em;
+}
+
+#cart-div-image{
+    float: left;
+}
+
+#cart-div-info{
+   display: inline;
+    width: 100%;
+}
+
+div#suggested-images-div{
+    border-top: #121212 solid 1px;
+    border-bottom: #121212 solid 1px;
+    padding: 2em 5em;
+ 
+    position: relative;
+
+}
+
+button#show-cart{
+    width: 30%;
+    height: 3em;
+    background-color: rgb(250, 201, 111);
+    color: black;
+}
+
+#show-cart:hover{
+    background-color: #82b1fe;
+}
+
+/*this is for the suggested div*/
+button#left-button{
+    position: absolute;
+    top: 50%;
+    left:1%;
+    width: 2%;
+    background-color: #4b4b4b;
+    color: white;
+}
+
+#left-button:hover{
+    background-color: #82b1fe;
+}
+
+button#right-button{
+    position: absolute;
+    top:50%;
+    right:1%;
+    width: 2%;
+    background-color: #4b4b4b;
+    color: white;
+}
+
+#right-button:hover{
+    background-color: #82b1fe;
+}
+
+
+/*used for the hidden items*/
+ui#ui-hidden{
+    position: relative;
+}

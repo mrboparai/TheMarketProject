@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="w3-mobile">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Karanvir Boparai 216343998" >
+        <meta name="description" content="site where you buy different computers" >
+        <meta name="keywords" content="computers, buy, monitors, laptops" >
+        <title>TheMarket</title>
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="products.js">
+        </script>
+        <script type="text/javascript" src="search.js">
+        </script>
+        <script type="text/javascript" src="sizeAndClothesPicker.js">
+        </script>
+        <script type="text/javascript" src="theCart.js">
+        </script>
+        <script type="text/javascript" src="animations.js">
+        </script>
+    </head>
+    <body>
+        <!-- this is the header with all the icons -->
+        <header>
+            <div id="theHeader" class="header-color w3-container" >
+                <img id="hamburger-menu" class="icon" src="images/icons/hamburger-menu.png" alt="Hamburger-menu"  />
+                <img id="logo" class="icon" src="images/icons/theMarket-logo1.png" alt="TheMarketLogo"/>
+                <span id="theForm">
+                    <form class="w3-hide-small">
+                        <div id="search-field">
+                            <input id="search-box"  class="w3-mobile" type="search" placeholder="Search.."/>
+                        </div>
+                        <div class="search-menu">
+                            <ul id="theMenu" class="search-menu">
+    
+                            </ul>
+                        </div>
+                    </form>
+                </span>
+                <img id="search-icon" class="icon w3-hide-large w3-hide-medium" src="images/icons/SearchBar-Icon.png" alt="Search" />
+                <img id="shopping-icon" class="icon" src="images/icons/shopping-cart.png" alt="Shopping-cart"  />
+                <img id="account-icon" class="icon" src="images/icons/new-accounts-icon.png" alt="Account" />
+            </div>
+            
+        </header>
+        <!-- this is the nav bar -->
+        <nav> 
+            <div class="header-color w3-hide-small w3-hide-medium" >
+                <ul class="nav-bar">
+                    <li class="nav-item">
+                        <a class="nav-button">Clothes</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class=" nav-button">Electronics</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class=" nav-button">Accessories</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class=" nav-button">Furniture</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class=" nav-button">Housing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="w3-auto">
+            <!-- this is the hidden title for nothing in the cart and the div for the items -->
+            <h2 id="no-items" style="text-align: center;" hidden>There is nothing in the Cart</h2>
+            <div id="hidden-cart" hidden>
+                <ul id="ul-hidden" class="theCart">
+                   
+                </ul>
+            </div>
+            <!-- this is the products div with the stacked images -->
+            <div class="row">
+                <div id="the-products" class="column" name="images" >
+                    <img id="trex-black" class="main-product" src="images/products/Christmas-Trex01.png" alt="Christmas-Trex-Black" />
+                    <img id="trex-red" class="main-product" src="images/products/Christmas-Trex02.png" alt="Christmas-Trex-Red" />
+                    <img id="trex-green" class="main-product" src="images/products/Christmas-Trex03.png" alt="Christmas-Trex-Green" />
+                </div>
+                <!-- this is the imformation on the product -->
+                <div class="column" name="product-information">
+                    <h3 id="main-product-name">Trex-tshirts-christmas-ugly-sweaters<br/></h3>
+                    <div name="stars">
+                        <p class="star-sizes" style="display: inline;">
+                            <span class="filled-star">&#9733;</span> 
+                            <span class="filled-star">&#9733;</span>
+                            <span class="filled-star">&#9733;</span>
+                            <span class="filled-star">&#9733;</span>
+                            <span>&#9734;</span>
+                        </p>
+                        <span>Ratings 102</span>
+                    </div>
+                    
+                    <hr/>
+                    <!-- this is product price and all of the various options and the information about the product -->
+                    <div name= "price">
+                        <span> Price:</span> <p class="price" style="display: inline;"></span>CDN <span>&#36;</span>19<sup>.99</sup></p>
+                        <p id="price" hidden>19<sup>.99</sup></p>
+                    </div>
+                        <br/>       
+                    <div name="size">
+                    <span> Sizes: 
+                            <select id="sweater-sizes">
+                                <option id="XXS" value="xxs">XXS</option>
+                                <option id="XS" value="xs">XS</option>
+                                <option id="S" value="s">S</option>
+                                <option id="L" value="l">L</option>
+                                <option id="XL" value="xl">XL</option>
+                                <option id="XXL" value="xxl">XXL</option>
+                            </select>
+                        </span>
+                    </div>
+                        <br/>
+                    <div name="colors">
+                        <span> Colors: 
+                            <select id="sweater-colors">
+                                <option  id="sweater-black" value="Black" disabled>Black</option>
+                                <option id="sweater-green" value="Green">Green</option>
+                                <option  id="sweater-orange" value="Orange" disabled>Orange</option>
+                                <option  id="sweater-pink" value="Pink">Pink</option>
+                                <option  id="sweater-purple" value="Purple" disabled>Purple</option>
+                                <option  id="sweater-red" value="Red">Red</option>
+                                <option  id="sweater-yellow" value="Yellow" disabled>Yellow</option>
+                            </select>
+                        </span>
+                    </div>
+
+                    <div id="product-description" name="product-description">
+                        <br/>
+                        <h4>Product description</h4>
+                        <ul>
+                            <li>50% cotten 50% pollester</li>
+                            <li><b>Machine</b> wash</li>
+                            <li>Big green t-Rex Santa ugly Christmas sweatshirt</li>
+                            <li>Cozy fleece fabric Festive Dinosaur Santa sweatshirt.</li>
+                            <li>Available to children and adults</li>
+                            <li>Great for Chirstmas photos, great for family gifts</li>
+                            <li>Premium quality dinosaur Santa long sleeve pullover</li>
+                            <li>Stretchable neckline</li>
+                            <li>Comes in 7 differnet colors. So, everyone in the family can have one!</li>
+                        </ul>
+                    </div>
+                    <!-- This is where the purchase menu -->
+                </div>
+                <div id="purchase-section" class="column" name="purchase-section">
+                    <p class="price">CDN <span>&#36;</span>19<sup>.99</sup></p>
+                    <p id="shipping" ><b>Free Shipping</b></p>
+                    <p id="stock" class="inStock">In Stock</p>
+                    <p>Quantity:
+                        <select id ="quantity-list">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <p><button id="add-to-cart-button">Add to Cart</button></p>
+                    <p><button id="purchase-buttons">Buy Now</button></p>
+                    <p><button id="show-cart">Show Cart</button></p>
+                </div>
+            </div>
+            <hr/>
+            <br/>
+            <!-- these are the suggested products -->
+            <div id="suggest-images"class="suggested-items w3-mobile">
+                <h2 style="padding-left: 3%;">Suggested Products</h2>
+
+                <div id="suggested-images-div" class="w3-row-padding w3-container" name="holding-images">
+                    <div  class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="ugly-santa02" style="width: 16%;">
+                        <img class="suggested-images" src="images/products/ugly-santa02.png" alt="ugly santa sweater" />
+                        <p>Ugly santa sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>17<sup>.99</sup></p>
+                    </div>
+
+                    <div class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="santa1" style="width: 16%;" >
+                        <img class="suggested-images" src="images/products/ugly-santa1.png" alt="ugly santa sweater " />
+                        <p>Ugly golf santa sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>13<sup>.99</sup></p>
+                    </div>
+
+                    <div class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="elf-cat-sweater" style="width: 16%;" >
+                        <img class="suggested-images" src="images/products/elf-cat-sweater.png" alt="Elf cat sweater" />
+                        <p>elf-cat sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>19<sup>.99</sup></p>                
+                    </div>
+
+                    <div class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="snowman-sweater" style="width: 16%;" >
+                        <img class="suggested-images" src="images/products/snowman-sweater.png" alt="snowman-sweater" />
+                        <p>snowman-sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>15<sup>.99</sup></p>
+                    </div>
+
+                    <div class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="presents-sweater" style="width: 16%;" >
+                        <img class="suggested-images" src="images/products/presents-sweater.png" alt="presents-sweater" />
+                        <p>Presents sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>25<sup>.99</sup></p>
+                    </div>
+
+                    <div class="card-hover suggested-porducts-div w3-card w3-col s4 w3-container" name="llama-sweater" style="width: 16%;" >
+                        <img class="suggested-images" src="images/products/llamas-sweater.png" alt="llama-sweater" />
+                        <p>Llama sweater</p>
+                        <p class="price"> CDN <span>&#36;</span>29<sup>.99</sup></p>
+                    </div>
+
+                    <div name="buttons">
+                    <button id="left-button" >&#10094;</button>
+                    <button id="right-button" >&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div id="footer" class="header-color">
+                <h6 style="text-align: center;">Site Map</h6>
+                <div class=" w3-container w3-cell column">
+                    <h6>Customer Support</h6>
+                    <p class="hover-color">Contact Us</p>
+                    <p class="hover-color">Returns</p>
+                </div>
+        
+                <div class="w3-container w3-cell column">
+                    <h6>About Us</h6>
+                    <p class="hover-color">Careers</p>
+                    <p class="hover-color">Corporate Information</p>
+                </div>
+                
+                <div class="w3-container w3-cell column">
+                    <h6>Copyright Information</h6>
+                    <p class="hover-color">YorkU</p>
+                    <p class="hover-color">Documentation</p>
+                </div>
+        
+                <div class="w3-container w3-cell column">
+                    <h6>Account</h6>
+                    <p class="hover-color">Manage Account</p>
+                    <p class="hover-color">Cart</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
